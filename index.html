@@ -44,15 +44,24 @@
     .profile-text h1 { margin: 0 0 12px; color: #1f2d3d; font-size: 32px; }
     .profile-text p { margin: 8px 0; font-size: 16px; }
     .links { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 10px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-bottom: 8px;
+    }
     h1 { margin: 0 0 8px; color: #1f2d3d; }
-    h2 { color: #2c3e50; margin-top: 32px; }
+    h2 { color: #2c3e50; margin-top: 0; }
     p { margin: 8px 0; }
     .card {
       background: #fff;
       padding: 24px;
       border-radius: 12px;
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-      margin-bottom: 20px;
+      min-height: 190px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     a { color: #1f6feb; text-decoration: none; }
     a:hover { text-decoration: underline; }
@@ -73,7 +82,6 @@
     <div class="profile-text">
       <h1>Junseong Shin</h1>
       <p>Ph.D. Student, Hanyang University</p>
-      <p>I am Junseong Shin, a Ph.D. student in <a href="https://sites.google.com/view/lliger9?pli=1">VILAB (Vision Intelligence Lab)</a> at Hanyang University, advised by Prof. Tae Hyun Kim. I work on generative models for low-level vision and related research projects.</p>
       <p>Email: <a href="mailto:junsung6140@hanyang.ac.kr">junsung6140@hanyang.ac.kr</a></p>
       <div class="links">
         <a href="https://scholar.google.com/citations?user=0OIKsxAAAAAJ&hl=ko">Google Scholar</a>
@@ -83,20 +91,27 @@
     </div>
   </header>
 
-  <div class="card">
-    <h2>News</h2>
-    <p>[07, 2025] One paper is accepted to ICCV 2025!</p>
-    <p>[10, 2023] One paper is accepted to CIKM 2023!</p>
-  </div>
+  <div class="cards">
+    <div class="card">
+      <h2>About</h2>
+      <p>I am a Ph.D. student in <a href="https://sites.google.com/view/lliger9?pli=1">VILAB (Vision Intelligence Lab)</a> at Hanyang University, advised by Prof. Tae Hyun Kim. I work on generative models for low-level vision and related research projects.</p>
+    </div>
 
-  <div class="card">
-    <h2>Publications</h2>
-    <p><a href="papers.html">View research papers</a></p>
-  </div>
+    <div class="card">
+      <h2>News</h2>
+      <p>[07, 2025] One paper is accepted to ICCV 2025!</p>
+      <p>[10, 2023] One paper is accepted to CIKM 2023!</p>
+    </div>
 
-  <div class="card">
-    <h2>Contact</h2>
-    <p>Email is the best way to reach me: <a href="mailto:junsung6140@hanyang.ac.kr">junsung6140@hanyang.ac.kr</a></p>
+    <div class="card">
+      <h2>Publications</h2>
+      <p><a href="papers.html">View research papers</a></p>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email is the best way to reach me: <a href="mailto:junsung6140@hanyang.ac.kr">junsung6140@hanyang.ac.kr</a></p>
+    </div>
   </div>
 </body>
 </html>
