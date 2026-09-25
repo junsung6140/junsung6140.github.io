@@ -68,6 +68,16 @@
     .bio b { color: var(--ink); font-weight: 600; }
     .bio a { color: var(--ink); border-bottom: 1px solid var(--line); transition: border-color .15s; }
     .bio a:hover { border-color: var(--ink); }
+    .job {
+      display: inline-flex; align-items: center; gap: 10px;
+      margin: 22px 0 0; padding: 10px 16px; border-radius: 12px;
+      background: var(--accent-soft); color: var(--ink-2); font-size: 15px; line-height: 1.5;
+    }
+    .job b { color: var(--accent); font-weight: 600; }
+    .job .dot {
+      flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
+      box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+    }
     .avatar {
       width: 220px; height: 220px; object-fit: cover;
       border-radius: 20px; border: 1px solid var(--line);
@@ -180,6 +190,10 @@
       </p>
       <p class="bio" style="margin-top:14px;">
         I received my B.S. in Mathematics from Hanyang University, and I now leverage this background in Bayesian methods and generative models for vision.
+      </p>
+      <p class="job">
+        <span class="dot"></span>
+        <span>I am on the job market for <b>research scientist and postdoctoral positions</b> starting in 2027.</span>
       </p>
 
       <div class="links">
